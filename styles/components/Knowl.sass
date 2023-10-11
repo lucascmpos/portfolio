@@ -1,2 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap')
+
 .knowl
+  display: flex
+  flex-direction: row
+  background-color: #E4E5EC
+  max-height: 20%
+
+.começo-con
+  margin-left: 11vw
+  max-height: 100%
+  font-family: 'Source Code Pro', monospace
+  color: #040E34
+
+
+.fim-con
+  font-family: 'Source Code Pro', monospace
+  color: #040E34
+  margin-left: 80vw
+
+
+  
+
+
+.conhecimentos-container
+  flex: 1
+  padding: 5rem
+  max-width: 100%
+  max-height: 0%
+  
+  p
+    font-family: 'Signika Negative', sans-serif
+
+
+  .descricao-conhecimentos
+    text-align: left
+    margin-left: 11vw
+    max-width: 30%
+    max-height: 1%
+    
+    
+
+
+.cards
+  margin-right: 16vw
+  margin-top: -5vw
+  margin-bottom: 3vw
+  display: grid
+  grid-template-columns: repeat(4, 6vw) 
+  gap: 2vw 
+  justify-content: flex-end 
+  font-family: 'Signika Negative', sans-serif
+  .card
+    width: 7vw
+    height: 7vw
     background-color: #E4E5EC
+    border: 2px solid #BDC0D6
+    display: flex
+    justify-content: center
+    transition: border 0.3s
+
+    &:hover
+      border: 2px solid #040E34
+    svg
+      width: 40% 
+      height: 100% 
+      color: #040E34

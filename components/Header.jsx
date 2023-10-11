@@ -10,11 +10,10 @@ function Header() {
       <h1>{'<'}</h1>
       <nav>
         <ul>
-          <li><a href="/">Quem sou</a></li>
-          <li><a href="/projetos">Projetos</a></li>
-          <li><a href="/experiencia">Experiência</a></li>
-          <li><a href="/conhecimentos">Conhecimentos</a></li>
-          <li><a href="/contato">Contato</a></li>
+          <li><a href="#quemsou">Quem sou</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#conhecimentos">Conhecimentos</a></li>
         </ul>
       </nav>
       <h1>{'/>'}</h1>
