@@ -15,7 +15,7 @@ function App() {
         <section className="apresentacao">
           <p>Olá, eu me chamo Lucas Campos, sou </p>
           <h1 className="dev">DESENVOLVEDOR FULLSTACK.</h1>
-          <p>Conheça mais sobre mim:</p>
+          <p>Apaixonado em criar aplicações e experiências interativas na web. </p>
         </section>
         <About />
         <Projects />

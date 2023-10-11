@@ -37,7 +37,7 @@ const Projects = () => {
   return (
     <main className="projects">
       <h2 className="começo">{"<Projetos"}</h2>
-      <p className="texto">*passe o cursor no card para mais detalhes*</p>
+      <p className="texto">*passe o cursor no projeto para mais detalhes*</p>
       <div className="slider-container">
         <Carousel showThumbs={false}>
           {images.map((image, index) => (

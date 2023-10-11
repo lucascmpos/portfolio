@@ -1,24 +1,64 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap')
 
 .experiencias-container
   display: flex
-  margin-left: 20rem
+  margin-left: 15rem 
+  padding-bottom: 5rem
+  max-height: 10rem
 
   .experiencias-menu
-    width: 200px /* Largura fixa para o menu */
-    padding-right: 30px
     cursor: pointer
     background-color: #E4E5EC
 
+
   .experiencias-conteudo
-    padding: 20px
+    padding-left: 5rem
+    width: 55%
+    
 
-  .items-menu
-    list-style-type: none
+.items-menu
+  margin-left: -50px
+  list-style-type: none
 
-  li
-    margin-left: 30px
-    border-bottom: 1px solid #ccc
+li
+  margin-left: 30px
+  border-bottom: 1px solid #ccc
+  cursor: pointer
+  transition: color 0.3s 
 
-  li:last-child
-    border-bottom: none /* Para remover a linha de separação do último item */
+  &.ativo
+    color: #122fa5 
+  &:last-child
+    border-bottom: none
+
+
+
+
+
+
+
+
+.exp
+  margin-left: 20rem
+  font-family: 'Source Code Pro', monospace
+  color: #040E34
+
+.fimexp
+  margin-left: 81rem
+
+.tit
+  margin-bottom: 1rem
+
+.subtit
+  font-weight: bold
+  color: #122fa5
+
+.menu-titulo
+  margin-bottom: 0.5rem
+  margin-left: 1rem
+  margin-right: 2rem
+
+
+.descricao
+  color: #404040
+  font-family: 'Signika Negative', sans-serif
