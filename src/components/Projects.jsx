@@ -51,10 +51,10 @@ const Projects = () => {
                 <p className="desc">{image.description}</p>
                 <div className="buttons">
                   <a className="button" href={image.href1} target="_blank">
-                    Site
+                    <p>Site</p>
                   </a>
                   <a className="button" href={image.href2} target="_blank">
-                    Repositório
+                    <p>Repositório</p>
                   </a>
                 </div>
               </div>

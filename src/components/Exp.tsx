@@ -34,7 +34,8 @@ const Exp = () => {
   );
   const [itemAtivo, setItemAtivo] = useState(null);
 
-  const handleExperienciaClicada = (experiencia, index) => {
+  const handleExperienciaClicada = (experiencia, index, e) => {
+    e.preventDefault();
     setExperienciaSelecionada(experiencia);
     setItemAtivo(index);
   };
@@ -48,7 +49,7 @@ const Exp = () => {
             {experiencias.map((experiencia, index) => (
               <li
                 key={experiencia.id}
-                onClick={() => handleExperienciaClicada(experiencia, index)}
+                onClick={(e) => handleExperienciaClicada(experiencia, index, e)}
                 className={index === itemAtivo ? "ativo" : ""}
               >
                 <h3 className="menu-titulo">{experiencia.subtitulo}</h3>

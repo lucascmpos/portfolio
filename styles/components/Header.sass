@@ -122,3 +122,78 @@ nav ul
   left: 60%
   top: 25%
 
+
+@media (max-width: 375px) 
+  .header 
+    width: 100%
+    height: 25vw
+    display: flex
+    
+    h1 
+      display: none
+    
+  
+    .nav-bar 
+      position: absolute
+      top: 10.6vh
+      right: 0
+      width: 100vw
+      height: 92vh
+      background-color: var(--border-color-dark)
+      display: flex
+      flex-direction: column
+      transform: translateX(100%)
+      transition: transform 0.4s // Adiciona uma transição suave
+  
+      &.active 
+        transform: translateX(0) // Quando a classe .active é aplicada, o menu desliza para a esquerda
+      
+  
+      ul 
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        gap: 50vw
+        li 
+          margin-left: 16vw
+          display: flex
+        
+      
+    
+  
+    nav ul li a 
+      margin-top: 0.1rem
+      text-decoration: none
+      font-weight: bold
+      font-size: 30px
+      color: grey
+    
+  
+    .mobile-menu 
+      display: block
+      cursor: pointer
+  
+      .line1, .line2, .line3 
+        width: 25px
+        height: 2px
+        background-color: grey
+        margin: 6px 0
+        margin-right: 10rem
+        transition: 0.4s
+      
+      
+      &.open 
+        .line1 
+          transform: rotate(-45deg) translate(-5px, 6px)
+        
+        .line2 
+          opacity: 0
+        
+        .line3 
+          transform: rotate(45deg) translate(-5px, -6px)
+        
+      
+    
+  
+
+      
