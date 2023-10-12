@@ -1,9 +1,10 @@
 import React from 'react'
 
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from 'react-icons/fa'
+import { HiDocumentText } from 'react-icons/hi'
 
-
-import '../styles/components/About.sass'
+import curriculo from '../img/curriculo.pdf'
+import '../../styles/components/About.sass'
 
 const socialNetworks = [
     { name: 'linkedin', icon: <FaLinkedinIn />, href:"https://www.linkedin.com/in/lucas-campos-b26a3b204/" },
@@ -29,6 +30,9 @@ const About = () => {
                 </a>
             ))}
         </section>
+        <button className="download-button" onClick={() => window.open(curriculo, '_blank')}>
+  <HiDocumentText />
+</button>
         <h2 className='fim'>{'/>'}</h2>
     </main>
   )

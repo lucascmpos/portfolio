@@ -1,11 +1,11 @@
 import React from "react";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import "../styles/components/SliderImages.sass";
-import "../styles/components/Projects.sass";
-import projeto1 from '../src/img/projeto1.jpeg'
-import projeto2 from '../src/img/projeto2.jpeg'
-import projeto3 from '../src/img/projeto3.jpeg'
+import '../../styles/components/SliderImages.sass'
+import '../../styles/components/Projects.sass'
+import projeto1 from '../../src/img/projeto1.jpeg'
+import projeto2 from '../../src/img/projeto2.jpeg'
+import projeto3 from '../../src/img/projeto3.jpeg'
 
 
 const Projects = () => {
@@ -41,11 +41,10 @@ const Projects = () => {
       <div className="slider-container">
         <Carousel showThumbs={false}>
           {images.map((image, index) => (
-            <div key={index} className="slide">
+            <div key={index} className="slider">
               <img
                 src={image.src}
                 alt={image.caption}
-                style={{ borderRadius: "15px", border: "3px solid #BDC0D6" }}
               />
               <div className="overlay">
                 <h3 className="title">{image.caption}</h3>

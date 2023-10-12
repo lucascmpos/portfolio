@@ -1,57 +1,99 @@
-@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap')
-    
+@import '../variables'
+
 .about
-    background-color: #E4E5EC
     margin-top: 10rem
     margin-left: 32rem
     padding-bottom: .8rem
     padding-left: 2rem
     padding-top: 10rem
     border-radius: 10px
-    border: 2px solid #BDC0D6
     width: 50%
     margin-bottom: 2rem
 
     .começo
         font-family: 'Source Code Pro', monospace
-        color: #040E34
         margin-top: -8rem
 
     .textos
         padding-left: 10rem
         padding-right: 10rem
-        
+        margin-bottom: 3rem
+        padding-bottom: 0
         p
-            color: #404040
             font-family: 'Signika Negative', sans-serif
 
 #social-networks
     display: flex
     justify-content: center
     gap: 1rem
-    .social-btn
+    .social-btn, .download-button
         padding: .6rem
-        background-color: #ECECEF
-        border: 2px solid #BDC0D6
         border-radius: 5px
-        color: #333
         font-size: 1.3rem
         transition: border 0.3s
 
-    .social-btn:hover
-        border: 2px solid #040E34
-        
-    #linkedin
-        color: #040E34
-
-    #github
-        color: #040E34
     
-    #whatsapp
-       color: #040E34
-
-
 .fim
     font-family: 'Source Code Pro', monospace
-    color: #040E34
     margin-left: 55rem
+
+.light-mode
+    .social-btn, .cv
+        border: 2px solid var(--border-color-light)
+    .social-btn, .cv:hover
+        border: 2px solid var(--footer-background-light)
+
+    .about
+        background-color: var(--secbackground-color-light)
+        border: 2px solid var(--border-color-light)
+        p
+            color: #4b4b4b  // Define a cor secundária no modo escuro
+        #linkedin, #github, #whatsapp, .download-button
+            color: var(--footer-background-light)
+            background-color: var(--secbackground-color-light)
+            border: 2px solid var(--border-color-light)
+            &:hover
+                border: 2px solid #080808
+
+
+    &:hover
+            border: 2px solid #080808
+        
+.fim
+  color: var(--purple-dark-mode)
+.download-button
+    cursor: pointer
+    margin-left: 23.2vw
+    margin-top: 1vw
+    padding: 1vw
+    padding-bottom: 0.3vw
+    padding-top: 0.3vw
+    border-radius: 5px
+    font-size: 1.3rem
+    transition: border 0.3s
+        
+.dark-mode
+    .social-btn, .cv
+        border: 2px solid var(--border-color-dark)
+    .social-btn, .cv:hover
+        border: 2px solid #080808
+
+    .about
+        background-color: var(--secbackground-color-dark)
+        border: 2px solid var(--border-color-dark)
+        p
+            color: #c0c0c0  // Define a cor secundária no modo escuro
+        #linkedin, #github, #whatsapp, .download-button
+            color: #4700a5
+            background-color: var(--secbackground-color-dark)
+            border: 2px solid var(--border-color-dark)
+            &:hover
+                border: 2px solid #080808
+
+
+    &:hover
+            border: 2px solid #080808
+        
+.fim
+  color: var(--purple-dark-mode)
+

@@ -1,8 +1,7 @@
+@import '../variables'
 
 header
-  background-color: #ECECEF
   font-family: 'Source Code Pro', monospace
-  color: #010514
   position: fixed 
   top: 0 
   left: 0 
@@ -15,16 +14,117 @@ header
   gap: 70px
   border-bottom: 1px solid #BDC0D6
 
-  nav ul
-    list-style: none 
-    display: flex 
-    li
+ 
+
+.light-mode header
+  background-color: var(--background-color-light)
+  color: var(--text-color)
+  border-bottom: 1px solid #BDC0D6
+
+.light-mode a
+  list-style: none 
+  display: flex
+  color: var(--text-color-light)
+  
+.light-mode a:hover
+  color: blue
+
+.dark-mode header
+  background-color: var(--background-color-dark)
+  color: var(--text-color-dark)
+  border-bottom: 1px solid #222222
+
+.dark-mode a
+  list-style: none 
+  display: flex
+  color: var(--text-color-dark)
+
+.dark-mode a:hover
+  color: var(--purple-dark-mode)
+
+.dark-mode h1
+  color: var(--purple-dark-mode)
+
+.dark-mode .slider-label .slider
+  background-color: black
+.light-mode .slider-label .slider
+  background-color: white
+.dark-mode .slider-indicator
+  background-color: white
+.light-mode .slider-indicator
+  background-color: black
+.dark-mode .moon-icon
+  color: yellow
+
+.light-mode .sun-icon
+  color: orange
+
+.dark-mode .slider
+  
+
+nav ul
+  list-style: none 
+  display: flex 
+
+  li
       margin-right: 50px 
       border: none
 
       a
         text-decoration: none 
-        color: #040E34
         font-weight: bold
+
+        
+
+.dark-mode-slider
+  display: inline-block
+  user-select: none
+
+.slider-label
+  position: relative
+  display: inline-block
+  width: 60px
+  height: 34px
+
+.slider-label input
+  display: none
+
+.slider-label .slider
+  position: absolute
+  cursor: pointer
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: #ccc
+  border-radius: 34px
+  transition: 0.4s
+  overflow: hidden
+
+.slider-indicator
+  width: 50%
+  height: 100%
+  border-radius: 34px
+  transition: 0.4s
+
+.slider-label input:checked + .slider .slider-indicator
+  transform: translateX(100%)
+
+.slider-label input:checked + .slider .moon-icon
+  opacity: 1
+
+.slider-label input:checked + .slider .sun-icon
+  opacity: 0
+
+.moon-icon
+  opacity: 0
+  position: absolute
+  left: 15%
+  top: 25%
+
+.sun-icon
+  position: absolute
+  left: 60%
+  top: 25%
 
 

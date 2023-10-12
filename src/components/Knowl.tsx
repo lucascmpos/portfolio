@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/components/Knowl.sass';
+import '../../styles/components/Knowl.sass'
 
 import { AiFillHtml5 } from 'react-icons/ai';
 import { FaNodeJs, FaJava, FaDocker } from 'react-icons/fa'

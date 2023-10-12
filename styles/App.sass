@@ -1,31 +1,48 @@
+@use '../styles/variables'
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap')
 
 html
-    scroll-behavior: smooth
+  scroll-behavior: smooth
 
 p
-    font-family: 'Source Code Pro', monospace
-    color: #010514
-    
+  font-family: 'Source Code Pro', monospace
+
 body
-    
-    background-color: #ECECEF
-    margin: 0
-    padding: 0
-    
+  background-color: var(--background-color-light)
+  margin: 0
+  padding: 0
+
 .apresentacao
-    p
-        font-size: 20px
-        font-family: 'Signika Negative', sans-serif
+  p
+    font-size: 20px
+    font-family: 'Signika Negative', sans-serif
 
+  h1
+    margin-top: 10px
+    font-size: 70px
+    font-family: 'Gabarito', sans-serif
 
+  padding-bottom: 0.8rem
+  padding-left: 23rem
+  padding-top: 20rem
+
+.light-mode
+  background-color: var(--background-color-light)
+  color: var(--text-color-light)
+  
+  .apresentacao
     h1
-        margin-top: 10px
-        font-size: 70px
-        font-family: 'Gabarito', sans-serif
-        color: #040E34
+        color: #06032b
 
-    margin-top: 10rem
-    padding-bottom: .8rem
-    padding-left: 23rem
-    padding-top: 10rem
+    p
+        color: #14132b
+
+.dark-mode
+  background-color: var(--background-color-dark)
+  color: var(--text-color-dark)
+  .apresentacao
+    h1
+        color: #f8f8f8
+
+    p
+        color: #747474

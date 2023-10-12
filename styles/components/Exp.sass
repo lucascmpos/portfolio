@@ -1,47 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap')
+@import '../variables'
 
 .experiencias-container
   display: flex
   margin-left: 15rem 
   padding-bottom: 5rem
   max-height: 10rem
-
   .experiencias-menu
     cursor: pointer
-    background-color: #E4E5EC
-
 
   .experiencias-conteudo
     padding-left: 5rem
     width: 55%
-    
 
-.items-menu
-  margin-left: -50px
-  list-style-type: none
+  .items-menu
+    margin-left: -50px
+    list-style-type: none
 
-li
-  margin-left: 30px
-  border-bottom: 1px solid #ccc
-  cursor: pointer
-  transition: color 0.3s 
+    li
+      margin-left: 30px
+      border-bottom: 1px solid var(--secbackground-color-light)
+      cursor: pointer
+      transition: color 0.3s 
 
-  &.ativo
-    color: #122fa5 
-  &:last-child
-    border-bottom: none
-
-
-
-
-
-
-
+      &:last-child
+        border-bottom: none
 
 .exp
   margin-left: 20rem
   font-family: 'Source Code Pro', monospace
-  color: #040E34
 
 .fimexp
   margin-left: 81rem
@@ -49,16 +36,67 @@ li
 .tit
   margin-bottom: 1rem
 
-.subtit
-  font-weight: bold
-  color: #122fa5
+
 
 .menu-titulo
   margin-bottom: 0.5rem
   margin-left: 1rem
   margin-right: 2rem
 
-
 .descricao
-  color: #404040
   font-family: 'Signika Negative', sans-serif
+
+.light-mode
+  .descricao, .data
+    color: #3a3a3a
+  .experiencias-container 
+    border-bottom: 1px solid var(--secbackground-color-light)
+    cursor: pointer
+    transition: color 0.3s
+  .exp, .fimexp, .tit, .menu-titulo, .descricao
+    &.ativo
+      color: white
+  .experiencias-menu
+    background-color: var(--secbackground-color-light)
+  .items-menu li
+    &.ativo
+      color: #0843af
+  .começo
+      color: var(--footer-background-light)
+  .fimexp
+      color: var(--footer-background-light)
+  .subtit
+    font-weight: bold
+    color: #0843af
+    font-size: 110%
+    
+.dark-mode
+    
+   .descricao
+    
+    color: #c7c7c7
+   .experiencias-container .items-menu li
+    border-bottom: 1px solid var(--secbackground-color-dark)
+    cursor: pointer
+    transition: color 0.3s
+    
+   .exp, .fimexp, .tit, .menu-titulo, .descricao
+    &.ativo
+      color: var(--purple-dark-mode) // Aplique os estilos quando a classe .ativo estiver presente no modo escuro
+   .experiencias-menu
+    background-color: var(--secbackground-color-dark)
+    .items-menu li
+      // Cor no modo escuro
+      &.ativo
+        color: var(--purple-dark-mode)
+    
+.subtit
+      font-weight: bold
+      color: var(--purple-dark-mode)
+      font-size: 110%
+
+.começo
+    color: var(--purple-dark-mode)
+
+.fimexp
+    color: var(--purple-dark-mode)
