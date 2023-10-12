@@ -23,7 +23,7 @@ const Knowl = () => {
       <section className='conhecimentos-container'>
         <h2 className='começo-con'>{'<Conhecimentos'}</h2>
         <div className='descricao-conhecimentos'>
-          <p>
+          <p className='desc'>
             {isMouseOverCard
               ? cardTexto
               : '*passe o cursor nos cards para saber mais, a descrição do conhecimento aparecerá aqui*'}
