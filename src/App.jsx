@@ -8,6 +8,8 @@ import Exp from "/src/components/Exp";
 import Knowl from "/src/components/Knowl";
 import HeaderResponsive from './components/HeaderResponsive';
 
+import { Fade } from 'react-reveal';
+
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false); // Estado para controlar o modo escuro
 
@@ -20,30 +22,39 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
   return (
-    
+
     <>
       <main className={`main ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-
-      <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
-      <HeaderResponsive toggleMenu={toggleMenu} />
+        <Fade >
+        <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
+        <HeaderResponsive toggleMenu={toggleMenu} />
+        </Fade>
         <section className="apresentacao">
           <p>Olá, eu me chamo Lucas Campos, sou</p>
           <h1 className="dev">DESENVOLVEDOR FULLSTACK.</h1>
           <p>Apaixonado em criar aplicações e experiências interativas na web.</p>
         </section>
         <section id="quemsou">
-          <About />
+          <Fade bottom>
+            <About />
+          </Fade>
         </section>
         <section id="projetos">
-          <Projects />
+          <Fade duration={500} delay={400}>
+            <Projects />
+          </Fade>
         </section>
         <section id="experiencia">
+          <Fade right>
           <Exp />
+          </Fade>
         </section>
         <section id="conhecimentos">
-          <Knowl />
+          <Fade left>
+            <Knowl />
+            </Fade>
         </section>
-      <Footer />
+        <Footer />
       </main>
     </>
   );
