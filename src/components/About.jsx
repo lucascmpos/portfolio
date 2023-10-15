@@ -3,7 +3,7 @@ import React from 'react'
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from 'react-icons/fa'
 import { HiDocumentText } from 'react-icons/hi'
 
-import curriculo from '../img/curriculo.pdf'
+import curriculo from '../img/curriculo lco.pdf'
 import '../../styles/components/About.sass'
 
 const socialNetworks = [
