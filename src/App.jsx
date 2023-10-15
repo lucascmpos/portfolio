@@ -8,7 +8,7 @@ import Exp from "/src/components/Exp";
 import Knowl from "/src/components/Knowl";
 import HeaderResponsive from './components/HeaderResponsive';
 
-import { Fade } from 'react-reveal';
+import { Fade } from 'react-awesome-reveal';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false); // Estado para controlar o modo escuro
@@ -25,7 +25,7 @@ function App() {
 
     <>
       <main className={`main ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-        <Fade >
+        <Fade triggerOnce >
         <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <HeaderResponsive toggleMenu={toggleMenu} />
         </Fade>
@@ -35,22 +35,22 @@ function App() {
           <p>Apaixonado em criar aplicações e experiências interativas na web.</p>
         </section>
         <section id="quemsou">
-          <Fade bottom>
+          <Fade bottom triggerOnce>
             <About />
           </Fade>
         </section>
         <section id="projetos">
-          <Fade duration={500} delay={400}>
+          <Fade duration={500} delay={400} triggerOnce>
             <Projects />
           </Fade>
         </section>
         <section id="experiencia">
-          <Fade right>
+          <Fade right triggerOnce>
           <Exp />
           </Fade>
         </section>
         <section id="conhecimentos">
-          <Fade left>
+          <Fade left triggerOnce>
             <Knowl />
             </Fade>
         </section>
