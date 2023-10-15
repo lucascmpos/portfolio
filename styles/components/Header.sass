@@ -125,16 +125,21 @@ nav ul
 .header-responsive
   display: none
 @media (max-width: 992px) 
-  .dark-mode .header .mobile-menu
-    display: block
-    cursor: pointer
-    background-color: blue
+  .dark-mode .header
+    background-color: var(--secbackground-color-dark)
+
+  .light-mode .header
+    background-color: var(--secbackground-color-light)
+
+
 
   
   .header 
     width: 100%
     height: 25vw
     display: flex
+    z-index: 1000
+
     
     h1 
       display: none

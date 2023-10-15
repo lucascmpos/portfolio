@@ -25,10 +25,8 @@ function App() {
 
     <>
       <main className={`main ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-        <Fade triggerOnce >
         <Header toggleDarkMode={toggleDarkMode} isDarkMode={isDarkMode} />
         <HeaderResponsive toggleMenu={toggleMenu} />
-        </Fade>
         <section className="apresentacao">
           <p>Olá, eu me chamo Lucas Campos, sou</p>
           <h1 className="dev">DESENVOLVEDOR FULLSTACK.</h1>
