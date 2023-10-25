@@ -3,15 +3,14 @@
 
 .experiencias-container
   display: flex
-  margin-left: 15rem 
-  padding-bottom: 5rem
-  max-height: 10rem
+  padding-bottom: 3rem
+  min-height: 100%
   .experiencias-menu
     cursor: pointer
 
   .experiencias-conteudo
     padding-left: 5rem
-    width: 55%
+    width: 100%
 
   .items-menu
     margin-left: -50px
@@ -27,8 +26,8 @@
         border-bottom: none
 
 .exp
-  margin-left: 20rem
   font-family: 'Source Code Pro', monospace
+  margin-left: 10rem
 
 .fimexp
   margin-left: 81rem
@@ -45,6 +44,7 @@
 
 .descricao
   font-family: 'Signika Negative', sans-serif
+  width: 70%
 
 .light-mode
   .descricao, .data
@@ -106,25 +106,34 @@
       display: flex
       flex-direction: column
       margin: 0
-      max-width: 200vw
-      min-height: 260vw
+
   .experiencias-container
     margin: 0
     display: flex
     flex-direction: column
   .experiencias-menu
-    margin-left: 8rem
+    display: flex
     padding: 0
-    width: 35vw
-    heigth: 200vw
+    width: 25%
+    margin-left: 45%
     margin-top: 3rem
     margin-bottom: 5rem
+    justify-content: center
+    align-items: center
     .menu-titulo
-      font-size: 4vw
-      margin-bottom: 0
+      font-size: 2vw
   .começo
     margin-left: 10vw
-  .fimexp
-      margin-left: 20rem
-      margin-top: 38rem
-  
+  .tit
+    width: 80%
+@media(max-width: 709px)
+  .experiencias-container .experiencias-menu 
+    width: 30%
+    margin-left: 35%
+    .menu-titulo
+      font-size: 4vw
+    
+@media (max-width: 380px)
+  .experiencias-container .experiencias-conteudo 
+    margin-left: -10%
+    width: 100%

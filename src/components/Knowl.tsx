@@ -21,7 +21,7 @@ const Knowl = () => {
   return (
     <main className='knowl'>
       <section className='conhecimentos-container'>
-        <h2 className='começo-con'>{'<Conhecimentos'}</h2>
+        <h2 className='começo-con'>{'Conhecimentos'}</h2>
         <div className='descricao-conhecimentos'>
           <p className='desc'>
             {isMouseOverCard
@@ -145,7 +145,6 @@ const Knowl = () => {
             <FaDocker />
           </div>
         </div>
-      <h2 className='fim-con'>{'/>'}</h2>
       </section>
     </main>
   );

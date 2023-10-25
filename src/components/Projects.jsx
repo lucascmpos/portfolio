@@ -6,6 +6,8 @@ import '../../styles/components/Projects.sass'
 import projeto1 from '../../src/img/projeto1.jpeg'
 import projeto2 from '../../src/img/projeto2.jpeg'
 import projeto3 from '../../src/img/projeto3.jpeg'
+import { FaGithub } from "react-icons/fa";
+import { BsBoxArrowUpRight } from 'react-icons/bs'
 
 
 const Projects = () => {
@@ -14,7 +16,7 @@ const Projects = () => {
       src: projeto1,
       caption: "Compass UOL Weekly Planner",
       description:
-        "Feito em ReactJS, o usuário se cadastra, pode adicionar e remover tarefas da sua semana. Aplicação se conecta em um banco de dados CRUD  para validação de usuário pela SwaggerAPI. Também foi integrada a WeatherAPI para clima da respectiva cidade. (O projeto foi desenvolvido com um banco de dados da Compass UOL durante meu estágio, onde hoje em dia foi excluído. No entanto, estarei disponibilizando uma demonstração em vídeo no meu LinkedIn gravada na época).",
+        "Feito em ReactJS, To-Do-List com cadastro CRUD para validação de usuário pela SwaggerAPI. WeatherAPI para clima da respectiva cidade. (O projeto foi desenvolvido com um banco de dados da Compass UOL durante meu estágio, onde hoje em dia foi excluído. No entanto, estarei disponibilizando uma demonstração em vídeo no meu LinkedIn gravada na época).",
       href1: "https://www.linkedin.com/feed/update/urn:li:activity:7024386144108699648/",
       href2: "https://github.com/lucascmpos/Projeto-Compass-VIII"
     },
@@ -36,9 +38,9 @@ const Projects = () => {
 
   return (
     <main className="projects">
-      <h2 className="começo">{"<Projetos"}</h2>
-      <p className="texto">Passe o cursor no projeto para mais detalhes!</p>
+      <h2 className="começo">{"Projetos"}</h2>
       <div className="slider-container">
+      <p className="texto">Passe o cursor no projeto para mais detalhes!</p>
         <Carousel showThumbs={false}>
           {images.map((image, index) => (
             <div key={index} className="slider">
@@ -51,10 +53,10 @@ const Projects = () => {
                 <p className="desc">{image.description}</p>
                 <div className="buttons">
                   <a className="button" href={image.href1} target="_blank">
-                    <p>Site</p>
+                    <BsBoxArrowUpRight />
                   </a>
                   <a className="button" href={image.href2} target="_blank">
-                    <p>Repositório</p>
+                    <FaGithub />
                   </a>
                 </div>
               </div>
@@ -62,7 +64,6 @@ const Projects = () => {
           ))}
         </Carousel>
       </div>
-      <h2 className="fim">{"/>"}</h2>
     </main>
   );
 };

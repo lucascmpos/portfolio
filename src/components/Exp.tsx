@@ -42,7 +42,7 @@ const Exp = () => {
 
   return (
     <section className="exp">
-      <h2 className="começo">{"<Experiências"}</h2>
+      <h2 className="começo">{"Experiências"}</h2>
       <div className="experiencias-container">
         <div className="experiencias-menu">
           <ul className="items-menu">
@@ -68,7 +68,6 @@ const Exp = () => {
           )}
         </div>
       </div>
-      <h2 className="fimexp">{"/>"}</h2>
     </section>
   );
 };

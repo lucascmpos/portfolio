@@ -29,13 +29,11 @@ function App() {
         <HeaderResponsive toggleMenu={toggleMenu} />
         <section className="apresentacao">
           <p>Olá, eu me chamo Lucas Campos, sou</p>
-          <h1 className="dev">DESENVOLVEDOR FULLSTACK.</h1>
+          <h1 className="dev">DESENVOLVEDOR FULLSTACK</h1>
           <p>Apaixonado em criar aplicações e experiências interativas na web.</p>
         </section>
         <section id="quemsou">
-          <Fade bottom triggerOnce>
             <About />
-          </Fade>
         </section>
         <section id="projetos">
           <Fade duration={500} delay={400} triggerOnce>
