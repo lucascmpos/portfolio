@@ -24,9 +24,16 @@ const Projects = () => {
     {
       src: projeto2,
       caption: "Upload.AI",
-      description: "Feito em React.js e Node.js com tailwind.css e Prisma, o usuário sobe um vídeo na plataforma e a IA através do Chat-GPT 3.5, transcreve em forma de texto, podendo alterar seus comandos como quiser. (Depois de um certo tempo, a transcrição pode não funcionar mais, devido ao limite financeiro da plataforma OpenAI).",
+      description: "Feito em React.js e Node.js com tailwind.css, shadcnUI e Prisma, o usuário sobe um vídeo na plataforma e a IA através do Chat-GPT 3.5, transcreve em forma de texto, podendo alterar seus comandos como quiser. (Depois de um certo tempo, a transcrição pode não funcionar mais, devido ao limite financeiro da plataforma OpenAI).",
       href1: "https://uploadai.netlify.app/",
       href2: "https://github.com/lucascmpos/NLW-IA"
+    },
+    {
+      src: projeto4,
+      caption: "LCTech Store",
+      description: "Feito em Next.js com NextAuth, usando tailwind.css, shadcnUI, PostgresSQL, Prisma, o projeto consiste em uma Loja fictícia de hardware onde o usuário pode entrar com o Google, adicionar produtos ao carrinho, fazer pedidos e realizar pagamentos com Stripe",
+      href1: "https://lctechstore.netlify.app/",
+      href2: "https://github.com/lucascmpos/LCTech-Store"
     },
     {
       src: projeto3,
@@ -35,13 +42,7 @@ const Projects = () => {
       href1: "https://monfi.netlify.app/",
       href2: "https://github.com/lucascmpos/MonFi"
     },
-    {
-      src: projeto4,
-      caption: "LCTech Store",
-      description: "Feito em Next.js, usando tailwind.css, PostgresSQL, Loja fictícia de hardware onde o usuário pode entrar com o Google, adicionar produtos ao carrinho, fazer pedidos e realizar pagamentos com Stripe",
-      href1: "https://lctechstore.netlify.app/",
-      href2: "https://github.com/lucascmpos/LCTech-Store"
-    },
+    
   ];
 
   return (
