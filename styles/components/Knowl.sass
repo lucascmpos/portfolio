@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap')
 @import '../variables'
 
+
+.text-cards
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    padding-bottom: 2rem
 .knowl
   width: 100%
-  .conhecimentos-container
   .desc
-      margin-left: 11rem
+      margin-left: 4rem
       width: 80%
 .começo-con
   padding-top: 1rem
@@ -23,9 +29,7 @@
     max-height: 1%
 
 .cards
-  margin-right: 16vw
   margin-top: 1vw
-  padding-bottom: 4rem
   display: grid
 
   grid-template-columns: repeat(4, 6vw)
@@ -35,18 +39,16 @@
   max-height: 1%
 
   .card
-    padding: 1rem
-    width: 3vw
-    height: 3vw
+    height: 2rem
+    padding: 0.5rem
     border: 2px solid var(--secbackground-color-light) // Usando a variável para a cor da borda
     display: flex
     justify-content: center
     transition: border 0.3s
 
     svg
-      font-size: 5rem
-      margin-top: -1.5rem
-
+      font-size: 2rem
+  
 
     
 .light-mode
@@ -65,8 +67,6 @@
 
   .começo-con
     color: #040E34
-  .fim-con
-    color: #040E34
 
 .dark-mode
   .knowl
@@ -80,70 +80,73 @@
       border: 2px solid var(--purple-dark-mode)
 .começo-con
     color: var(--purple-dark-mode)
-.fim-con
-    color: var(--purple-dark-mode)
+
 
 @media (max-width: 1024px)
-  .knowl
+  .text-cards
     display: flex
-    max-height: 150vw
-    .cards
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    margin-bottom: 2rem
+  .descricao-conhecimentos
+    width: 60%
+    margin-bottom: 3rem
+  .knowl .desc
     margin: 0
-    .card
-      font-size: 1.5rem 
-
-@media (max-width: 992px)
-  .knowl
-    .cards
-      margin-right:  25%
-      margin-bottom: 10%
-      gap: 2.5rem
-      .card
-        padding: 40%
-        width: 5vw 
-        height: 5vw
-        margin-top: 20%
-    .começo-con
-      margin-left: 10vw
-    .descricao-conhecimentos
-      width: 80%
-      margin-left: -5%
-    .conhecimentos-container
-      margin: 0
-
+    margin-left: 2rem
 @media(max-width: 570px)
+  .começo-con
+    margin-left: 10vw
   .knowl .desc 
-    margin-left: 8rem
-    width: 80%
-
-
-@media (max-width: 378px)
-  .knowl
-    .cards
-      gap: 2.2rem
-      .card
-        width: 6vw 
-        height: 6vw
-    .descricao-conhecimentos
-      margin-left: -25%
-
-@media (max-width: 320px)
-  .knowl
-    padding-bottom: 30%
-    .cards
-      margin-right:  25%
-      gap: 2rem
-      .card
-        width: 6vw 
-        height: 6vw
+    width: 70%
+  .cards .card
+      padding: 0.1rem
+      width: 2rem
+      height: 1.7rem
+      justify-content: center
       svg
-        font-size: 4rem
+        font-size: 1.7rem
+  .cards
+      gap: 1.5rem
+  .text-cards
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+      margin-bottom: 2rem
+  .desc
+      margin: 0
+      margin-bottom: 5rem
+
+@media (max-width: 425px)
+  .knowl
+    padding-bottom:10%
+    display: flex
+    justify-content: center
+    .cards .card
+      padding: 0.1rem
+      width: 2rem
+      height: 1.7rem
+      justify-content: center
+      svg
+        padding: 0
+        font-size: 1.7rem
+    .cards
+      justify-content: center
+      width: 100%
+      gap: 2rem
     .começo-con
       margin-left: 10vw
     .descricao-conhecimentos
-      width: 80%
-      margin-left: -30%
-    .conhecimentos-container
+      padding: 0
       margin: 0
-      
- 
+      width: 80%
+    .text-cards
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    .desc
+      margin-left: 3rem
+      margin-bottom: 3rem
