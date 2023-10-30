@@ -1,8 +1,12 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Bem vindo ao meu Portfolio!
 
-Currently, two official plugins are available:
+## Este website resume minha carreira até o momento, me resumindo, mostrando os meus maiores projetos até o momento, experiências profissionais e conhecimentos técnicos.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Funcionalidades: Modo noturno, componentização, carrossel, responsividade.
+
+#### Link do deploy: https://lucascampos-portfolio.netlify.app
+
+##### Tecnologias: React.js - Sass - React Icons
+
+
