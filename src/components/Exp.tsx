@@ -5,23 +5,15 @@ const Exp = () => {
   const experiencias = [
     {
       id: 1,
-      titulo: "Desenvolvedor Trainee",
+      titulo: "Desenvolvedor Front-End & AWS Cloud",
       subtitulo: "Compass UOL",
       descricao:
-        "Atuei na Compass dentro do seu parceiro Livelo, onde pratiquei metodologias ágeis como Scrum e Kanban, desenvolvi, modifiquei, testei componentes do Storybook do Livelo App (Web/Mobile) utilizando React TS, React Native, Styled Components, SASS, Storybook e Figma.",
-      data: "05/06/2023 - 02/09/2023",
+        "Durante 5 meses, foram feitos diversos cursos de desenvolvimento, metodologias ágeis e AWS Cloud, contendo projetos reais e avaliações durante um programa de bolsas, após isso, fui efetivado e atuei na Compass dentro do seu parceiro Livelo, onde pratiquei metodologias ágeis como Scrum e Kanban, desenvolvi, modifiquei, testei componentes do Storybook do Livelo App (Web/Mobile) utilizando React TS, React Native, Styled Components, SASS, Storybook e Figma.",
+      data: "28/11/2022 - 02/09/2023",
     },
     {
       id: 2,
-      titulo: "Estagiário de Desenvolvimento Front-End e AWS Cloud",
-      subtitulo: "Compass UOL",
-      descricao:
-        "No programa de bolsas, foram feitos diversos cursos na Udemy dos respectivos conteúdos: Metodologias ágeis, lógica de programação, Git, JavaScript, TypeScript, ReactJS, Testes integrados, NodeJS, e finalizando com AWS Cloud. Todo esse conhecimento adquirido, foi aplicado em dois projetos dentro do estágio, utilizando: React e React Native (JavaScript, TypeScript, HTML, CSS), APIs - Weather API, Swagger API e AWS Cloud e GraphQL. ",
-      data: "11/11/2022 - 01/05/2023",
-    },
-    {
-      id: 3,
-      titulo: "Estagiário em Help Desk",
+      titulo: "Auxiliar de Help Desk",
       subtitulo: "Webby Internet",
       descricao:
         "Como estagiário em um provedor de internet atuei atendendo o público, prestando suporte interno e externo através de um sistema ERP, configurando redes de internet (IPV4/IPV6, DNS, MTU) de roteadores e modens com uma solução técnica e rápida de problemas de infraestrutura de hardware, rede e segurança.",
