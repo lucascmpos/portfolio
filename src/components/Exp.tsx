@@ -9,7 +9,7 @@ const Exp = () => {
       subtitulo: "Compass UOL",
       descricao:
         "Durante 5 meses, foram feitos diversos cursos de desenvolvimento, metodologias ágeis e AWS Cloud, contendo projetos reais e avaliações durante um programa de bolsas, após isso, fui efetivado e atuei na Compass dentro do seu parceiro Livelo, onde pratiquei metodologias ágeis como Scrum e Kanban, desenvolvi, modifiquei, testei componentes do Storybook do Livelo App (Web/Mobile) utilizando React TS, React Native, Styled Components, SASS, Storybook e Figma.",
-      data: "28/11/2022 - 02/09/2023",
+      data: "28/11/2022 - 02/09/2023 - 11 Meses",
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Exp = () => {
       subtitulo: "Webby Internet",
       descricao:
         "Como estagiário em um provedor de internet atuei atendendo o público, prestando suporte interno e externo através de um sistema ERP, configurando redes de internet (IPV4/IPV6, DNS, MTU) de roteadores e modens com uma solução técnica e rápida de problemas de infraestrutura de hardware, rede e segurança.",
-      data: "05/06/2021 - 05/12/2021",
+      data: "05/06/2021 - 05/12/2021 - 6 Meses",
     },
   ];
 
